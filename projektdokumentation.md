@@ -5,7 +5,7 @@ Monstein
 | Datum    | Version | Zusammenfassung                                              |
 | -------- | ------- | ------------------------------------------------------------ |
 | 05.01.23 | 0.0.1   | Ich habe die ersten 5 Punkte (ausser 4.2) der Dokumentation ausgefüllt. |
-|          | 0.0.2   |                                                              |
+| 12.01.23 | 0.0.2   | Unter Punkt 1 Analyse Tier 4 bearbeitet |
 |          | 0.0.3   |                                                              |
 |          | 0.0.4   |                                                              |
 |          | 0.0.5   |                                                              |
@@ -21,7 +21,7 @@ Ein Glücksradspiel, basierend auf der deutschen TV-Show, in dem man verschieden
 * Tier 1 (Presentation): Webseite mit Glücksrad & Buchstaben.
 * Tier 2 (Webserver): Daten entgegennehmen & überprüfen
 * Tier 3 (Application Server): Übereinstimmung von Buchstaben prüfen.
-* Tier 4 (Dataserver): Login & Highscores speichern
+* Tier 4 (Dataserver): Admin-Login & Highscore-Liste, Wörter/Phrasen
 
 # 2 Technologie
 
