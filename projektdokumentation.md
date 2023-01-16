@@ -56,6 +56,7 @@ Daten sollen in einer mySQL Datenbank gespeichert werden, ebenfalls um Koplikati
 | A | Kann | Funktional | Als Kandidat möchte ich einen Darkmode aktivieren könne, damit ich meine Augen schonen kann. |
 | B | Kann | Funktional | Als Kandidat möchte ich den Schwierigkeitsgrad einstellen können, damit ich das Niveau meinem Können anpassen kann. |
 | C | Kann | Funktional | Als Administrator möchte ich Wörter/Phrasen Schwierigkeitsgrade zuweisen, damit die Spieler den passenden Grad wählen können. |
+| D | Kann | Funktional | Als Kandidat möchte ich einen Admin kontaktieren können, damit ich diesen um Hilfe fragen kann bei Integritätsproblemen. |
 
 # 4.2 Testfälle
 
