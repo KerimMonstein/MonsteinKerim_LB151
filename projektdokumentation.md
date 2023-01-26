@@ -8,7 +8,7 @@ Monstein
 | 12.01.23 | 0.0.2   | Unter Punkt 1 Analyse Tier 4 bearbeitet.                     |
 | 13.01.23 | 0.0.3   | Anforderungen fertig gestellt.                               |
 | 13.01.23 | 0.0.4   | Testfälle erstellt.                                          |
-| 26.01.23 | 0.0.5   | Ich habe einige Anforderungen Inhaltlich und deren Nummerierung korrigiert und die Anforderungen B & C zu muss geändert, |
+| 26.01.23 | 0.0.5   | Ich habe einige Anforderungen Inhaltlich und deren Nummerierung korrigiert und die Anforderungen B & C zu muss geändert. Tracer Bullter-Prototyp, Datenbank & GUI (grob) erstellt.|
 
 # 0 Ihr Projekt
 
