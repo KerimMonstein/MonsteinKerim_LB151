@@ -1,3 +1,4 @@
+
 # Projekt-Dokumentation
 
 Monstein
@@ -9,6 +10,8 @@ Monstein
 | 13.01.23 | 0.0.3   | Anforderungen fertig gestellt.                               |
 | 13.01.23 | 0.0.4   | Testfälle erstellt.                                          |
 | 26.01.23 | 0.0.5   | Ich habe einige Anforderungen Inhaltlich und deren Nummerierung korrigiert und die Anforderungen B & C zu muss geändert. Tracer Bullter-Prototyp, Datenbank & GUI (grob) erstellt.|
+| 07.02.23 | 0.0.6   | Ich habe die Datenbank fertig gestellt und mit einigen Daten befüllt. Admin-Interface erstellt.|
+| 21.02.23 | 0.0.7   | Spiel soweit erstellt das es spielbar ist. (Noch ohne interaktion mit der Datenbank)|
 
 # 0 Ihr Projekt
 
@@ -99,14 +102,37 @@ Daten sollen in einer mySQL Datenbank gespeichert werden, ebenfalls um Komplikat
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| ...        |       |              |
+| 1-9 & C    |07.02.23|              |
+| Rest        |21.02.23|              |
 
 # 7 Projektdokumentation
 
 | US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
 | 1    | ja / nein |                                           |
-| ...  |           |                                           |
+| 2    | ja / nein |                                           |
+| 3    | ja / nein |                                           |
+| 4    | ja / nein |                                           |
+| 5    | ja / nein |                                           |
+| 6    | ja / nein |                                           |
+| 7    | ja / nein |                                           |
+| 8    | ja / nein |                                           |
+| 9    | ja / nein |                                           |
+| 10   | ja / nein |                                           |
+| 11   | ja / nein |                                           |
+| 12   | ja / nein |                                           |
+| 13   | ja / nein |                                           |
+| 14   | ja / nein |                                           |
+| 15   | ja / nein |                                           |
+| 16   | ja / nein |                                           |
+| 17   | ja / nein |                                           |
+| 18   | ja / nein |                                           |
+| 19   | ja / nein |                                           |
+| A    | ja / nein |                                           |
+| B    | ja / nein |                                           |
+| C    | ja / nein |                                           |
+| D    | ja / nein |                                           |
+
 
 # 8 Testprotokoll
 
