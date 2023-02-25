@@ -1,4 +1,3 @@
-
 # Projekt-Dokumentation
 
 Monstein
@@ -9,9 +8,11 @@ Monstein
 | 12.01.23 | 0.0.2   | Unter Punkt 1 Analyse Tier 4 bearbeitet.                     |
 | 13.01.23 | 0.0.3   | Anforderungen fertig gestellt.                               |
 | 13.01.23 | 0.0.4   | Testfälle erstellt.                                          |
-| 26.01.23 | 0.0.5   | Ich habe einige Anforderungen Inhaltlich und deren Nummerierung korrigiert und die Anforderungen B & C zu muss geändert. Tracer Bullter-Prototyp, Datenbank & GUI (grob) erstellt.|
-| 07.02.23 | 0.0.6   | Ich habe die Datenbank fertig gestellt und mit einigen Daten befüllt. Admin-Interface erstellt.|
-| 21.02.23 | 0.0.7   | Spiel soweit erstellt das es spielbar ist. (Noch ohne interaktion mit der Datenbank)|
+| 26.01.23 | 0.0.5   | Ich habe einige Anforderungen Inhaltlich und deren Nummerierung korrigiert und die Anforderungen B & C zu muss geändert. Tracer Bullet-Prototyp, Datenbank & GUI (grob) erstellt. |
+| 07.02.23 | 0.0.6   | Ich habe die Datenbank fertig gestellt und mit einigen Daten befüllt. Admin-Interface erstellt. |
+| 21.02.23 | 0.0.7   | Spiel soweit erstellt das es spielbar ist. (Noch ohne interaktion mit der Datenbank) |
+| 23.02.23 | 0.0.8   | Spielfunktionalität mit Datenbank verbunden. Funktionierende Highscore-Liste. |
+| 25.02.23 | 0.0.8   | Dokumentation angepasst, Testen, README.md erstellt          |
 
 # 0 Ihr Projekt
 
@@ -19,10 +20,10 @@ Ein Glücksradspiel, basierend auf der deutschen TV-Show, in dem man verschieden
 
 # 1 Analyse
 
-* Tier 1 (Presentation): Webseite mit Glücksrad & Buchstaben.
-* Tier 2 (Webserver): Daten entgegennehmen & überprüfen
-* Tier 3 (Application Server): Übereinstimmung von Buchstaben prüfen.
-* Tier 4 (Dataserver): Admin-Login & Highscore-Liste, Wörter/Phrasen
+* Tier 1 (Presentation): JSF, Webseite mit Glücksrad(Button & Outputfield) & Buchstaben-Grid. (Rateformular)
+* Tier 2 (Webserver): JSF, Daten entgegennehmen & überprüfen
+* Tier 3 (Application Server): JPA, Übereinstimmung von Buchstaben prüfen, Admin-Login 
+* Tier 4 (Dataserver): mySQL, Highscore-Liste, Rate-Wörter/Phrasen
 
 # 2 Technologie
 
@@ -30,9 +31,10 @@ Ich möchte mit Java arbeiten und das Framework JSF verwenden, damit ich die Unt
 
 # 3 Datenbank
 
-Daten sollen in einer mySQL Datenbank gespeichert werden, ebenfalls um Komplikationen mit mir unbekannten Varianten zu vermeiden.
+Daten sollen in einer mySQL Datenbank gespeichert werden, ebenfalls um Komplikationen mit mir unbekannten Varianten zu vermeiden. Erstellt und bearbeitet wird die Datenbank mit phpmyadmin. Die Anbindung an die Applikation funktioniert mittels JPA.
 
 # 4.1 User Stories
+
 | US-№ | Verbindlichkeit | Typ        | Beschreibung                                                 |
 | ---- | --------------- | ---------- | ------------------------------------------------------------ |
 | 1    | Muss            | Funktional | Als Administrator möchte ich mich mit einem Benutzernamen & Passwort authentifizieren können, damit nur ich Zugang zu Admin-Funktionen habe. |
@@ -98,56 +100,82 @@ Daten sollen in einer mySQL Datenbank gespeichert werden, ebenfalls um Komplikat
 
 # 6 Implementation
 
-✍️ Halten Sie fest, wann Sie welche User Story bearbeitet haben
-
-| User Story | Datum | Beschreibung |
-| ---------- | ----- | ------------ |
-| 1-9 & C    |07.02.23|              |
-| Rest        |21.02.23|              |
+| User Story     | Datum    | Beschreibung                                         |
+| -------------- | -------- | ---------------------------------------------------- |
+| 14, 17         | 26.01.23 | Datenbank mit Wörter befüllt                         |
+| 1-5            | 07.02.23 | Admin-Login & Admin-Interface (Mit Funktionalität)   |
+| 6-9, 16, 19    | 07.02.23 | Rate-Seite Interface, Eingabevalidierung, Sicherheit |
+| B & C          | 21.02.23 | Spiellogik, Wörter aus Datenbank                     |
+| 10, 11, 13, 18 | 23.02.23 | Eintrag in Highscore-Liste, Sortierung, Transaktion  |
 
 # 7 Projektdokumentation
 
-| US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
-| ---- | --------- | ----------------------------------------- |
-| 1    | ja / nein |                                           |
-| 2    | ja / nein |                                           |
-| 3    | ja / nein |                                           |
-| 4    | ja / nein |                                           |
-| 5    | ja / nein |                                           |
-| 6    | ja / nein |                                           |
-| 7    | ja / nein |                                           |
-| 8    | ja / nein |                                           |
-| 9    | ja / nein |                                           |
-| 10   | ja / nein |                                           |
-| 11   | ja / nein |                                           |
-| 12   | ja / nein |                                           |
-| 13   | ja / nein |                                           |
-| 14   | ja / nein |                                           |
-| 15   | ja / nein |                                           |
-| 16   | ja / nein |                                           |
-| 17   | ja / nein |                                           |
-| 18   | ja / nein |                                           |
-| 19   | ja / nein |                                           |
-| A    | ja / nein |                                           |
-| B    | ja / nein |                                           |
-| C    | ja / nein |                                           |
-| D    | ja / nein |                                           |
+| US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung                    |
+| ---- | --------- | ------------------------------------------------------------ |
+| 1    | ja        | adminBean.java, Zeile 24-31.                                 |
+| 2    | ja        | Interface generiert durch JPA, Ordner "woerter", woerterController, woerterFacade |
+| 3    | ja        | Interface generiert durch JPA, Ordner "kategorien", kategorienController, kategorienFacade |
+| 4    | ja        | Interface generiert durch JPA, Ordner "highscoreliste", highscorelisteController, highscorelisteFacade |
+| 5    | ja        | JSF Anwendung läuft im Browser                               |
+| 6    | ja        | Index.xhtml, *Zeile 28*                                      |
+| 7    | ja        | Index.xhtml, *Zeile 50*                                      |
+| 8    | ja        | Index.xhtml, *Zeile 54*                                      |
+| 9    | ja        | Index.xhtml, *Zeile 64*                                      |
+| 10   | ja        | Index.xhtml, *Zeile 66-87*, gameBean.java, endGame(), *Zeile 206-271* |
+| 11   | ja        | Index.xhtml, *Zeile 66-87*, gameBean.java, endGame(), Zeile 241-*248*, highscoreBean.java, getHighscore() |
+| 12   | nein      | Zeitmangel                                                   |
+| 13   | ja        | Index.xhtml, *Zeile 35* gameBean.java, endGame(), *Zeile 206-271* |
+| 14   | ja        | *Sichtbar in der Datenbank Tabelle "woerter".*               |
+| 15   | nein      | Zeitmangel                                                   |
+| 16   | ja        | Index.xhtml, *Zeile 28 & 57*  gameBean.java *Zeile 130*      |
+| 17   | ja        | mySQL Datenbank, angebunden durch JPA                        |
+| 18   | ja        | gameBean.java, endGame(), *Zeile 213-261*                    |
+| 19   | ja        | Inputfelder werden automatisch escaped, adminInterface in secured-Ordner |
+| A    | nein      | Zeitmangel                                                   |
+| B    | ja        | Index.xhtml, *Zeile 29-32*, gameBean.java *Zeile 188-196*    |
+| C    | ja        | Interface generiert durch JPA, Ordner "woerter", woerterController, woerterFacade |
+| D    | nein      | Zeitmangel                                                   |
 
 
 # 8 Testprotokoll
+✍️VIDEO VERLINKUNG
 
-✍️ Fügen Sie hier den Link zu dem Video ein, welches den Testdurchlauf dokumentiert.
+| TC-№ | Datum    | Resultat | Tester         |
+| ---- | -------- | -------- | -------------- |
+| 1.1  | 25.01.23 | OK       | Kerim Monstein |
+| 2.1  | 25.01.23 | OK       | Kerim Monstein |
+| 2.2  | 25.01.23 | OK       | Kerim Monstein |
+| 2.3  | 25.01.23 | OK       | Kerim Monstein |
+| 3.1  | 25.01.23 | OK       | Kerim Monstein |
+| 3.2  | 25.01.23 | OK       | Kerim Monstein |
+| 4.1  | 25.01.23 | OK       | Kerim Monstein |
+| 5.1  | 25.01.23 | OK       | Kerim Monstein |
+| 6.1  | 25.01.23 | OK       | Kerim Monstein |
+| 7.1  | 25.01.23 | OK       | Kerim Monstein |
+| 8.1  | 25.01.23 | OK       | Kerim Monstein |
+| 9.1  | 25.01.23 | OK       | Kerim Monstein |
+| 10.1 | 25.01.23 | OK       | Kerim Monstein |
+| 11.1 | 25.01.23 | OK       | Kerim Monstein |
+| 12.1 | 25.01.23 | NOK      | Kerim Monstein |
+| 13.1 | 25.01.23 | OK       | Kerim Monstein |
+| 14.1 | 25.01.23 | OK       | Kerim Monstein |
+| 15.1 | 25.01.23 | NOK      | Kerim Monstein |
+| 16.1 | 25.01.23 | OK       | Kerim Monstein |
+| 16.2 | 25.01.23 | OK       | Kerim Monstein |
+| 17.1 | 25.01.23 | OK       | Kerim Monstein |
+| 18.1 | 25.01.23 | OK       | Kerim Monstein |
+| 19.1 | 25.01.23 | OK       | Kerim Monstein |
+| A.1  | 25.01.23 | NOK      | Kerim Monstein |
+| B.1  | 25.01.23 | OK       | Kerim Monstein |
+| C.1  | 25.01.23 | OK       | Kerim Monstein |
+| D.1  | 25.01.23 | NOK      | Kerim Monstein |
 
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
-
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Fast alle "Muss"-Anforderungen (mit Ausnahme von 12 & 15) wurden erfolgreich implementiert. 
 
 # 9 `README.md`
 
-✍️ Beschreiben Sie ausführlich in einer README.md, wie Ihre Applikation gestartet und ausgeführt wird. Legen Sie eine geeignete Möglichkeit (Skript, Export, …) bei, Ihre Datenbank wiederherzustellen.
+[README.md](https://github.com/KerimMonstein/MonsteinKerim_LB151/files/10832439/README.md)
+✍️ DATENBANK VERLINKUNG
 
 # 10 Allgemeines
 
