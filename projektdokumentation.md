@@ -98,7 +98,8 @@ Daten sollen in einer mySQL Datenbank gespeichert werden, ebenfalls um Komplikat
 
 # 5 Prototyp
 
-![MockUpLB151.drawio](C:\Users\monst\OneDrive\Desktop\MockUpLB151.drawio.png)
+![MockUpLB151 drawio](https://user-images.githubusercontent.com/69577029/222418115-93af9d51-af10-4e27-8831-9ed2d6004077.png)
+
 
 # 6 Implementation
 
